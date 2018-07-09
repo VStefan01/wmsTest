@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:body>
+    <ui:composition template="template.xhtml">
+        <ui:define name="breadcrumb">
+            <!-- Breadcrumb-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">
+                    <a href="/users">#{labels['menu.admin.users.label']}</a>
+                </li>
+            </ol>
+        </ui:define>
+        <ui:define name="content">
+            <div class="card">
+                <div class="card-header">
+                    #{labels['page.admin.users.list']}
+                    <div class="card-header-actions">
+                        <a href="#" class="btn btn-block btn-outline-primary">
+                            #{labels['button.users.add']}
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body collapse show" id="collapseExample">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                    ea commodo consequat.
+                </div>
+            </div>
+            <script type="text/javascript" src="vendors/jquery/js/jquery.min.js"></script>
+
+        </ui:define>
+
+    </ui:composition>
+
+</h:body>
+</html>
